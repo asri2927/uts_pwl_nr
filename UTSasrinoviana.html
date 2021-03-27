@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <style>
+        /* navbar */
+        .nav-item {
+            padding-left: 15px;
+        }
+
+        /* carousel */
+        .carousel-item {
+            height: 100vh;
+        }
+
+        /* scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* section */
+
+        #gallery,
+        #contact {
+            height: 600px;
+        }
+    </style>
+    <title>Ruang Adventure</title>
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-warning fixed-top">
+        <a class="navbar-brand" href="#">ASRI NOVIANA FITRI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Tentang</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Galeri</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- home -->
+    <section id="home">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="data:image/jpeg;base64,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"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-left">
+                        <h3>PENDAKI GUNUNG</h3>
+                        <p>Pendakian umumnya merujuk pada perjalanan panjang dan penuh semangat yang biasanya melewati
+                            jalan kecil di area pedalaman. Di Indonesia, pendakian ini identik dengan perjalanan menuju
+                            puncak gunung. Kegiatan ini umumnya dilakukan oleh klub-klub pecinta alam. Adakalanya dalam
+                            pendakian perjalanan harus melalui hutan lebat, dan harus memotong semak-semak untuk membuat
+                            jalur yang bisa dilewati. Pendakian ini bisa menghabiskan waktu lebih dari 1 hari
+                            perjalanan.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://4.bp.blogspot.com/-u1Sq81d3y5g/WVpnU8cXZTI/AAAAAAAAAKs/4FsXz2UWrbwWCnPairkfCtoRwNnZ2YkFACEwYBhgL/s1600/Libby-Waldo-hiking-at-sunset-in-Spray-Park-Mt.-Rainier-National-Park-Washington-United-States-1920x1080-wide-wallpapers.net.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-left">
+                        <h3>PENDAKI LEGENDARIS</h3>
+                        <p> Soe Hok Gie, seorang demonstran yang mencintai Indonesia dengan cara mendaki gunung</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn0-production-images-kly.akamaized.net/egDiCNpLuhb2p8CVOfvzeqVzlYA=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1734672/original/016031100_1507609615-Pendaki-Gunung4.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-left">
+                        <h3>PENDAKI LEGENDARIS INDONESIA</h3>
+                        <p>Iwan Abdulrachman, Wanadri dan Kawasan Konservasi Masigit Kareumbi bukti aksi cinta Abah Iwan
+                            pada alam</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- about -->
+    <section id="about">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container text-center">
+                <h1>Tentang Web Ini</h1>
+                <img src="https://www.pendakicantik.com/wp-content/uploads/2020/06/Pendaki-Cantik-@anisamawarn.jpg"
+                    alt="" class="rounded-circle img-thumbnail" width="50%">
+                <h3 class="display-5">ASRI NOVIANA FITRI</h3>
+                <h4 class="display-5">5520119097</h4>
+                <p class="lead">MENJADI PENDAKI BERHIJAB ADALAH IMPIAN SAYA</p>
+            </div>
+        </div>
+    </section>
+    <!-- gallery -->
+    <section id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col mx-4 text-center">
+                    <h1>INI HALAMAN GALLERY</h1>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col mx-4 text-center">
+                    <p>Gunung Gede merupakan sebuah gunung api bertipe stratovolcano yang berada di Pulau Jawa,
+                        Indonesia. Gunung Gede berada dalam ruang lingkup Taman Nasional Gede Pangrango, yang merupakan
+                        salah satu dari lima taman nasional yang pertama kali diumumkan di Indonesia pada tahun 1980.
+                        Gunung ini berada di dua wilayah kabupaten yaitu Kabupaten Cianjur dan Sukabumi, dengan
+                        ketinggian 1.000 - 2.958 m. dpl, dan berada pada lintang 106°51' - 107°02' BT dan 64°1' - 65°1
+                        LS. Suhu rata-rata di puncak gunung Gede 18 °C dan di malam hari suhu puncak berkisar 5 °C,
+                        dengan curah hujan rata-rata 3.600 mm/tahun. Gerbang utama menuju gunung ini adalah dari Cibodas
+                        dan Cipanas.</p>
+                </div>
+                <div class="col mx-4 text-center">
+
+                    <p>Gunung Semeru atau Gunung Meru adalah sebuah gunung berapi kerucut di Jawa Timur, Indonesia.
+                        Gunung Semeru merupakan gunung tertinggi di Pulau Jawa, dengan puncaknya Mahameru, 3.676 meter
+                        dari permukaan laut (mdpl). Gunung Semeru juga merupakan gunung berapi tertinggi ketiga di
+                        Indonesia setelah Gunung Kerinci di Sumatra dan Gunung Rinjani di Nusa Tenggara Barat[2]. Kawah
+                        di puncak Gunung Semeru dikenal dengan nama Jonggring Saloko. Gunung Semeru secara administratif
+                        termasuk dalam wilayah dua kabupaten, yakni Kabupaten Malang dan Kabupaten Lumajang, Provinsi
+                        Jawa Timur. Gunung ini termasuk dalam kawasan Taman Nasional Bromo Tengger Semeru.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <div class="row pb-5 pt-2">
+                <div class="col md-8 text-center ">
+                    <h1>Contact Us</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4 ">
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Contact US</h4>
+                            <p class="card-text">Jika anda berminat untuk menggunakan jasa web kami silahkan isi form di
+                                samping</p>
+                        </div>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-warning text-center">
+                            <h3>Location</h3>
+                        </li>
+                        <li class="list-group-item">
+                            <h5>Universitas Suryakancana</h5>
+                        </li>
+                        <li class="list-group-item">
+                            <h5>Fakultas Teknik</h5>
+                        </li>
+                        <li class="list-group-item">
+                            <h5>NonReg 2019</h5>
+                        </li>
+                        <li class="list-group-item">
+                            <h5>Asten</h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" class="form-control" id="nama">
+                        </div>
+                        <div class="form-group">
+                            <label for="nomorTelepon">Nomor (whatsapp only)</label>
+                            <input type="text" class="form-control" id="nomorTelepon">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan">Pesan</label>
+                            <textarea name="pesan" id="pesan" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="btn" class="btn bg-primary text-white">Kirim!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white ">
+        <div class="pt-2"><img
+                src="https://pendakiindonesia.com/wp-content/uploads/2018/10/jelajah-pendaki-indonesia-putih.png" alt=""
+                width="100px"></div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
